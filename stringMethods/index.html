@@ -7,10 +7,24 @@
 </head>
 <body>
     <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3">Please visit Microsoft and Microsoft!</p>
+    <button onclick="myFun()">change</button>
     <script>
         let x = "Sagor,Habiba,Sidratul";
         let substring = x.substring(6,12);
         document.getElementById('demo').innerHTML = substring;
+        let str = "Apple, Banana, Kiwi";
+        let substr = str.substr(0,5);
+        document.getElementById('demo1').innerHTML = substr;
+        let text = "My nami is Shafiqul Islam Sagor";
+        let replaceText = text.replace("nami","name");
+        document.getElementById('demo2').innerHTML = replaceText;
+        function myFun(){
+            let text = document.getElementById('demo3').innerHTML ;
+            document.getElementById('demo3').innerHTML = text.replace(/MICROSOFT/i,"W3School")
+        }
     </script>
 </body>
 </html>
