@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Lowercase</title>
+</head>
+<body>
+    <p id="demo">THIS IS MY WIFE</p>
+    <button onclick="myFun()">Click</button>
+    <script>
+        function myFun(){
+            let text = document.getElementById('demo').innerHTML;
+            let lowercase = text.toLocaleLowerCase();
+            document.getElementById('demo').innerHTML = lowercase;
+        }
+    </script>
+</body>
+</html>
